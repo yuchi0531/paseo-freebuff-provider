@@ -1,0 +1,20 @@
+{
+  "description": "Free AI coding agent with leading models, no subscription required",
+  "id": "freebuff",
+  "media": [],
+  "name": "Freebuff",
+  "requirements": {
+    "paseo": ">=0.11.2"
+  },
+  "build": [
+    [
+      "npm",
+      "ci",
+      "--omit=dev"
+    ],
+    [
+      "node",
+      "scripts/patch-sdk.cjs"
+    ]
+  ]
+}

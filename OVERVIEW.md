@@ -1,0 +1,5 @@
+Freebuff is a free AI coding agent for Paseo. It brings models such as MiMo 2.6 Flash, GLM 5.3 Flash, DeepSeek V4.1 Flash, GPT-6 Luna, and Solar Mini and Pro 4 to any workspace, with file edits, shell commands, code search, and todo tracking handled through the Codebuff backend.
+
+It works by running the same agent harness as the freebuff CLI inside the plugin daemon, using your existing freebuff login on the daemon machine. Open the freebuff settings screen to set an API key override, a default model, and the per-turn agent step cap.
+
+Capabilities worth knowing: text prompts and image attachments are supported, the conversation persists across agent refreshes, and a /model command in the composer reports the active model. The provider reads your freebuff credentials and project files from the daemon machine and sends prompts, code context, and tool results to the Codebuff backend. A freebuff account is required, and free-tier session limits apply. Model availability follows the freebuff catalog.
